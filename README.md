@@ -9,8 +9,7 @@ Things you may want to cover:
     ruby 3.2.2
 
 * model creation
-<img src="https://ibb.co/dfDstRb" alt="model-creation"/>
-
+<img src="https://i.ibb.co/9pWmh7w/d2.png" alt="model-creation"/>
 I created two databases one called User that was made using the devise gem and the other called Post.
 The relation's:
 User has_many :posts, this means that a given user could have more than one post registerd
@@ -19,55 +18,55 @@ Post belogns_to :user, this means that the post model will have a foreign key co
 ---
 
 * The home page while the user is not signed in
-<img src="https://ibb.co/cD2vYDV" alt="not-signed-in"/>
+<img src="https://i.ibb.co/J5rd35g/home-not-signed-in.png" alt="not-signed-in"/>
 i made it so that a non registerd user's can not edit, delete or create articles but can only view them
 they also do not have accses to these paths if the do not register first
 
 * The home page of a registerd user
-<img src="https://ibb.co/42nzrqR" alt="signed-in"/>
+<img src="https://i.ibb.co/VxcR41Y/home-signed-in.png" alt="signed-in"/>
 i made it so a registerd user can create posts as well as view there own posts, and they can only delete and edit there own posts,
 they can not delete or edit posts of other users
 
 ---
 
 * Sign in with-out errors
-<img src="https://ibb.co/pXNYqKw" alt="sign-i-no-errors"/>
+<img src="https://i.ibb.co/RHtR86b/sighn-in-no-err.png" alt="sign-i-no-errors"/>
 Devise user sign in form without any errors
 
 * Sign in with error's
-<img src="https://ibb.co/K9bNxNM" alt="sign-in-errors"/>
+<img src="https://i.ibb.co/64rv0v3/sign-in-error.png" alt="sign-in-errors"/>
 this is the sign in form with an error, this will happen if you leave any of the fields blank when sighning in or if
 the information provided does not match with information from the database
 
 * Sign up form
-<img src="https://ibb.co/YZCpWpM" alt="sign up"/>
+<img src="https://i.ibb.co/TLfmTmS/sign-up.png" alt="sign up"/>
 This is a Devise user sign up form, if you leave the field's blank you will have
 the same styled error message but the message will be differnt
 
 ---
 
 * Create a post
-<img src="https://ibb.co/YDcYwdS" alt="create a post"/>
+<img src="https://i.ibb.co/HNt13Py/create-a-post.png" alt="create a post"/>
 i made it so the a user can create a new post, and the :title and :content fields are required to do so, if left blank you will recive an error message,
 check out <i>app/models/post</i> to see more
 
 * show or read a post
-<img src="https://ibb.co/RBrFS1r" alt="read"/>
+<img src="https://i.ibb.co/BrWpPmW/show.png" alt="read"/>
 This is where users can see the full content as well as the title, edit, and delete buttons of a post
 
 * Edit a post
-<img src="https://ibb.co/6RzwKpc" alt="edit a post"/>
+<img src="https://i.ibb.co/DDhWB6P/edit-post.png" alt="edit a post"/>
 i made it so that users can edit created posts, but they can only edit posts that they made not that other users made, will recive an error message if there are fields that are left blank
 
 ---
 
 * My posts without posts
-<img src="https://ibb.co/Pg99z5T" alt="my posts without posts"/>
+<img src="https://i.ibb.co/89dd4jz/view-posts-none.png" alt="my posts without posts"/>
 i made it so that a user can view posts that they have made,
 and this is the message that displays when a post has not been made yet
 
 * My posts with posts
-<img src="https://ibb.co/2MzF9Gh" alt="my posts posts"/>
+<img src="https://i.ibb.co/n1XwGxm/my-pots-not-empty.png" alt="my posts posts"/>
 i made it so that user is able to view posts that they hhave made
 
 ---
