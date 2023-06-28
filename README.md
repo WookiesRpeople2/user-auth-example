@@ -9,7 +9,7 @@ Things you may want to cover:
     ruby 3.2.2
 
 * model creation
-<img src="https://ibb.co/dfDstRb" alt="model creation"/>
+<img src="https://ibb.co/dfDstRb" alt="model-creation"/>
 
 I created two databases one called User that was made using the devise gem and the other called Post.
 The relation's:
@@ -19,23 +19,23 @@ Post belogns_to :user, this means that the post model will have a foreign key co
 ---
 
 * The home page while the user is not signed in
-<img src="https://ibb.co/cD2vYDV" alt="not signed in"/>
+<img src="https://ibb.co/cD2vYDV" alt="not-signed-in"/>
 i made it so that a non registerd user's can not edit, delete or create articles but can only view them
 they also do not have accses to these paths if the do not register first
 
 * The home page of a registerd user
-<img src="https://ibb.co/42nzrqR" alt="signed in"/>
+<img src="https://ibb.co/42nzrqR" alt="signed-in"/>
 i made it so a registerd user can create posts as well as view there own posts, and they can only delete and edit there own posts,
 they can not delete or edit posts of other users
 
 ---
 
 * Sign in with-out errors
-<img src="https://ibb.co/pXNYqKw" alt="sign in no errors"/>
+<img src="https://ibb.co/pXNYqKw" alt="sign-i-no-errors"/>
 Devise user sign in form without any errors
 
 * Sign in with error's
-<img src="https://ibb.co/K9bNxNM" alt="sign in errors"/>
+<img src="https://ibb.co/K9bNxNM" alt="sign-in-errors"/>
 this is the sign in form with an error, this will happen if you leave any of the fields blank when sighning in or if
 the information provided does not match with information from the database
 
