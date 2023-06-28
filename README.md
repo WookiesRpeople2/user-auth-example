@@ -96,4 +96,4 @@ rails tailwindcss:watch
 ```
 in order to see styles take place in real time
 
-# Thank you for checking ou this projet 😊
+# Thank you for checking out this projet 😊
