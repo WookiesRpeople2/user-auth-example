@@ -13,7 +13,7 @@ Things you may want to cover:
 I created two databases one called User that was made using the devise gem and the other called Post.
 The relation's:
 User has_many :posts, this means that a given user could have more than one post registerd
-Post belogns_to :user, this means that the post model will have a foreign key constraint linked to User
+Post belongs_to :user, this means that the post model will have a foreign key constraint linked to User
 
 ---
 
