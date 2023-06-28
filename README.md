@@ -73,7 +73,7 @@ i made it so that user is able to view posts that they hhave made
 ---
 
 * Admins
-![admin](https://ibb.co/dt7Hw2g "admin")
+<img src="https://i.ibb.co/LrvsXt5/admin.png" alt="admin"/>
 If a user is an admin they can read/show , edit, and delete posts of all users as they see fit
 
 * Styling
