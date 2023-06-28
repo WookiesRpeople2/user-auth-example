@@ -12,8 +12,8 @@ Things you may want to cover:
 <img src="https://i.ibb.co/9pWmh7w/d2.png" alt="model-creation"/>
 I created two databases one called User that was made using the devise gem and the other called Post.
 The relation's:
-- User has_many :posts, this means that a given user could have more than one post registerd
- -Post belongs_to :user, this means that the post model will have a foreign key constraint linked to User
+[x] - User has_many :posts, this means that a given user could have more than one post registerd
+[x] - Post belongs_to :user, this means that the post model will have a foreign key constraint linked to User
 
 ---
 
