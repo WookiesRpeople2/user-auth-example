@@ -1,0 +1,23 @@
+<div class="flex justify-center items-center">
+<%= form_with model: @post do |f|%>
+
+<% @post.errors.full_messages.each do |message| %>
+        <div role="alert" class="my-2">
+        <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+          something went wrong !
+       </div>
+            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+            <p><%=message%></p>
+        </div>
+<% end %>
+
+<%=f.label :title %>
+<%= f.text_field :title, class:inputs%>
+
+<%=f.label :content %>
+<%= f.text_area :content, class:inputs %>
+
+
+<%= f.submit "Create", class:blue_buttons %>
+<%end%>
+</div>

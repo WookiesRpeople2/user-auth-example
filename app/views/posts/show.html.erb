@@ -1,0 +1,13 @@
+<div class="flex items-center justify-center flex-col">
+<h1 class="text-6xl font-bold my-20"><%=@post.title%></h1>
+<p class ="text-2xl my-10"><%=@post.content%></p>
+<% if user_signed_in? && (@post.user_id == current_user.id or current_user.admin?)%>
+<div>
+<%= link_to "edit", edit_post_path(@post), class:blue_buttons %>
+<%= link_to "delete", post_path(@post), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "This will delte this post are you sure"
+                  }, class:blue_buttons %>
+</div>
+<%end%>
+</div>

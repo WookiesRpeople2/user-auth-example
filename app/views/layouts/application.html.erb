@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ThisIsIt</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex w-full items-center justify-evenly bg-gradient-to-r from-green-500 to-blue-500 lg:flex-wrap lg:py-7">
+          <%= link_to 'Home', root_path, class:nav_links %>
+          <%if user_signed_in?%>
+          <%= link_to 'Create a new post', new_post_path, class:nav_links%>
+          <%= link_to 'view my posts', posts_my_posts_path, class:nav_links%>
+          <%= link_to "Edit user", edit_user_registration_path, class:nav_links%>
+          <%= button_to 'Sign out', destroy_user_session_path, method: :delete, class:nav_links%>
+          <% else %>
+          <%= link_to 'Sign in', user_session_path, class:nav_links%>
+          <%= link_to 'Sign up', new_user_registration_path, class:nav_links%>
+          <%end%>
+      </nav>
+    </header>
+
+      <%if alert %>
+        <div class="flex justify-center items-center flex-col my-2">
+          <div role="alert">
+        <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+          something went wrong !
+       </div>
+            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+            <p class="alert"><%= alert %></p>
+        </div>
+
+      <% elsif notice%>
+        <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+          <div class="flex justify-center items-center x-1/2">
+            <p class="notice"><%= notice %></p>
+          </div>
+        </div>
+      <% end %>
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<%if @posts.empty?%>
+<div class="flex justify-center items-center">
+<h1 class = "flex items-center justify-center flex-col w-full h-96 bg-zinc-400 my-4 rounded-3xl mx-5 text-3xl text-white">
+It looks like you have no posts yet,
+<br/>you can create one by going to create posts
+</h1>
+</div>
+<%else%>
+<%= render "posts/partials/all"%>
+<%end%>

@@ -1,0 +1,13 @@
+<% @posts.each do |post| %>
+<div class="flex justify-center items-center">
+<div class= "flex items-center justify-center flex-col w-2/4 h-52 bg-zinc-400 my-4 rounded-3xl">
+<h1 class="text-rose-50 font-medium text-3xl"><%=post.title%></h1>
+<div>
+<%= link_to "Show", post_path(post), class: blue_buttons%>
+<% if user_signed_in? && (post.user_id == current_user.id || current_user.admin?)%>
+<%= link_to "edit", edit_post_path(post), class:blue_buttons %>
+<%end%>
+</div>
+</div>
+</div>
+<%end%>
