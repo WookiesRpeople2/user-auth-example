@@ -86,7 +86,7 @@ I used the tailwind gem in order to style my project, in order to see the styles
 in order to run this app localy you will need [Ruby](https://www.ruby-lang.org/fr/) as well as [Ruby on rails](https://rubyonrails.org/)
 
 ```cmd
-bundle/install
+bundle install
 rails s
 ```
 
